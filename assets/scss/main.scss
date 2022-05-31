@@ -1,0 +1,286 @@
+@import 'config';
+@import 'buttons';
+@import 'signin';
+
+// style navbar start
+.navbar{
+    &-brand{
+        max-width: 200px;
+    }
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .custom-toggler.navbar-toggler {
+        border-color: $primary-color;
+        background: $primary-color;
+    }
+
+    &-nav{
+        align-items: center;
+    }
+    .nav-item.active .nav-link{
+        color: $primary-color;
+    }
+    .nav-link{
+        margin-left: 20px;
+        font-size: $default-size;
+        color: $dark-color;
+        &:hover,
+        &:active,
+        &:focus{
+            color: $primary-color;
+        }
+    }
+    .btn{
+        font-size: $default-size;
+        margin-left: 25px;
+    }
+}
+// style navbar end
+
+
+// style breadcrumb start
+.breadcrumb-wrap{
+    background-color: $secondary-color;
+}
+.breadcrumb{
+    background-color: transparent;
+    padding: 1rem 0;
+    margin-bottom: 0;
+    &-item{
+        a{
+            color: $primary-color;
+        }
+        
+    }
+}
+// style breadcrumb end
+// style banner start
+.banner p{
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+}
+// style banner end
+
+// style footer section start
+.footer{
+    background-color: $primary-color;
+    color: $white-color;
+
+    &-top{
+        border-bottom: 1px solid $white-color;
+        padding-bottom: 40px;
+    }
+    &-title{
+        font-weight: bold;
+    }
+    
+    .nav{
+        &-link{
+            color: $white-color;
+            padding-left: 0;
+        }
+    }      
+}
+// style footer end
+
+// social icons design start 
+.social{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+    &-item{
+        margin-left: 15px;
+    }
+
+    &-link{
+        color: $primary-color;
+        i{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 1rem;
+            box-shadow: 0 0 3px 1px rgba(0,0,0,.1);
+            background-color: $white-color;
+            border-radius: 50%;
+            transition: .5s;
+            
+            &:hover{
+                background-color: $optional-color;
+                color: $white-color;
+            }
+        }
+    }
+}
+// social icons design end 
+
+// general card style start
+.card{
+    border: none;
+    box-shadow: 0px 0px 4px 2px rgba($color: #000000, $alpha: 0.1);
+    border-radius: $primary-radius;
+    transition: .3s;
+    margin-bottom: 30px;
+
+    &-header{
+        border-top-right-radius: $primary-radius !important;
+        border-top-left-radius: $primary-radius !important;
+    }
+
+    &-img{
+        position: relative;
+        .overlay-text{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    }
+
+    &-img-top{
+        width: 100%;
+        border-top-left-radius: $primary-radius;
+        border-top-right-radius: $primary-radius;
+    }
+    &-type{
+        color: $primary-color;
+        font-size: $small-size;
+    }
+    &-title{
+        font-size: $font-card-title;
+        font-weight: 600;
+        a{
+            color: $dark-color;
+        }
+        &-large{
+            font-size: $card-title-large;
+        }
+    }
+    &-author{
+        &-name{
+            color: $optional-color;
+        }
+    }
+    &-text{
+        color: $dark-color;
+    }
+    .location, .card-date, .card-comment{
+        color: $light-dark;
+        font-size: $text-size;
+        font-style: italic;
+    }
+    .facility{
+        color: $light-dark;
+        font-size: $text-size;
+        i{
+            color: $primary-color;
+        }
+    }
+    &:hover{
+        box-shadow: 0px 0px 12px 8px rgba($color: #000000, $alpha: 0.12);
+
+        .card-title{
+            a{
+                color: $optional-color;
+            }
+        }
+    }
+}
+// general card style end
+
+// latest properties style start
+.latest-propery{
+    .item{
+        margin-bottom: 1.5rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .title{
+        font-weight: 600;
+        a{
+            color: $dark-color;
+            &:hover{
+                color: $optional-color;
+                color: $optional-color;
+            }
+        }
+    }
+    .price{
+        color: $primary-color;
+        font-weight: bold;
+        margin-bottom: .4rem;
+    }
+    .facility{
+        font-size: $small-size;
+        color: $light-dark;
+    }
+}
+// latest properties style end
+
+// terms and policy page
+.terms-condition{
+    .terms-item{
+        .terms-nav{
+            i.fas{
+                color: $light-dark;
+            }
+        }
+    }
+}
+
+// checkout page start
+.checkout{
+    .form-control{
+        height: 45px;    
+        border-radius: $primary-radius;
+        border-left: none;
+        padding-left: 0;
+    }
+    .input-group-text{
+        background-color: transparent;
+        border-right: none;   
+        border-top-left-radius: $primary-radius !important;
+        border-bottom-left-radius: $primary-radius !important;
+        color: $light-dark;
+    }
+}
+// checkout page end
+// forgot pass page start
+.forgot-pass{
+    
+}
+// forgot pass page end
+/* circular progressbar section start */
+.circle{
+    position: relative;
+}
+.circle-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.circle-content i{
+    color: $primary-color;
+    margin-bottom: 10px;
+}
+.circle-content h3{
+    font-size: 22px;
+    color: $light-dark;
+}
+/* circular progressbar section end */
+
+@import 'home';
+@import 'forsale';
+@import 'contact_us';
+@import 'blog';
+@import 'property_single';
+@import 'profile';
+@import 'security';
+@import 'about_us';
+@import 'cart';
+@import 'dashboard';
+@import 'media';

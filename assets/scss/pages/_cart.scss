@@ -1,0 +1,17 @@
+.cart{
+    &-item{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        &:not(:last-child){
+            border-bottom: 1px solid $border-color;
+        }
+    }
+    .card{
+        &-img{
+            width: 80px;
+        }
+        &-title{
+            font-size: 1rem;
+        }
+    }
+}

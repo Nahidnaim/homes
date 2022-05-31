@@ -1,0 +1,33 @@
+.password-rule{
+    &-item{
+        padding: 4px 0;
+        i{
+            color: $primary-color;
+        }
+    }
+}
+
+.notification{
+    &-title{
+
+    }
+    &-text{
+        color: $light-dark;
+    }
+    .custom-control.custom-checkbox{
+        padding-left: 2rem;
+    }
+}
+@media(max-width: 575.98px){
+    .notification{
+        &-header-title{
+            font-size: 1rem;
+        }
+        &-title{
+            font-size: .95rem;
+        }
+        &-text{
+            font-size: .9rem;
+        }
+    }
+}

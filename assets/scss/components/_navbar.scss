@@ -1,0 +1,35 @@
+// navbar css start0
+.navbar {
+  &-brand {
+    max-width: 150px;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: $primary-color;
+    background: $primary-color;
+  }
+
+  &-nav {
+    align-items: center;
+  }
+  .nav-item.nuxt-link-exact-active .nav-link {
+    color: $primary-color;
+  }
+  .nav-link {
+    margin-left: 20px;
+    font-size: $default-size;
+    color: $dark-color;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+  .btn {
+    font-size: $default-size;
+    margin-left: 25px;
+  }
+}
+// navbar css end

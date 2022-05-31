@@ -1,0 +1,32 @@
+// social icons design start
+.social {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+  &-item {
+    margin-left: 15px;
+  }
+
+  &-link {
+    color: $primary-color;
+    svg {
+      width: 30px !important;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 0.95rem;
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+      background-color: $white-color;
+      border-radius: 50%;
+      transition: 0.5s;
+      padding: 7px;
+
+      &:hover {
+        background-color: $optional-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+// social icons design end

@@ -1,0 +1,63 @@
+// sign in page
+.sign-in {
+  // background-color: $secondary-color;
+  border-top: 1px solid $primary-color;
+  &-brand {
+    color: $primary-color;
+    i {
+      font-size: 100px;
+    }
+  }
+  .welcome-img {
+    width: 100px;
+  }
+  &-form {
+    border: 1px solid $primary-color;
+
+    &-header {
+      color: $primary-color;
+      border-bottom: 1px solid $primary-color;
+    }
+    &-body {
+      padding: 2rem;
+    }
+    .form-group {
+      label {
+        color: $primary-color;
+        font-size: $label-font-size;
+      }
+      a {
+        color: $primary-color;
+      }
+      .input-group {
+        &-text {
+          background-color: transparent;
+          border-right: none;
+        }
+        .form-control {
+          border-left: none;
+          padding-left: 0;
+          border-top-right-radius: 0.3rem;
+          border-bottom-right-radius: 0.3rem;
+          font-size: $default-size;
+        }
+      }
+
+      .valid-msg {
+        background-color: #d73647;
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        color: $white-color;
+        text-align: center;
+      }
+      .custom-control-label {
+        color: $dark-color;
+        font-size: 0.9rem;
+        padding-top: 1px;
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

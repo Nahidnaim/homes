@@ -1,0 +1,261 @@
+// style home page start
+#home {
+  &-banner {
+    background-image: $bg-banner;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center center;
+    .banner {
+      background: rgba($color: $dark-color, $alpha: 0.4);
+      width: 100%;
+      .btn-banner {
+        background-color: $primary-color;
+        color: $white-color;
+      }
+      .btn-banner.active {
+        background-color: #fff;
+        color: $dark-color;
+      }
+    }
+    .search-form {
+      background-color: $white-color;
+      border-radius: 0.3rem;
+
+      .form {
+        // background-color: $secondary-color;
+        &-group {
+          margin-bottom: 0;
+        }
+        .input-group {
+          &-text {
+            background-color: $secondary-color;
+            border: none;
+          }
+        }
+        .cus-form-grp {
+          position: relative;
+          // height: calc(2.2em + 1.1rem + 5px);
+          height: 50px;
+        }
+        .cus-prepend {
+          position: absolute;
+          z-index: +1;
+          height: inherit;
+        }
+        .cus-input {
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+        .cus-input .form-control {
+          padding-left: 40px;
+        }
+
+        &-control,
+        select {
+          border: none;
+          background-color: $secondary-color;
+          height: 50px;
+          font-size: $default-size;
+          padding-left: 0;
+
+          &:focus,
+          &:focus-within {
+            outline: none;
+            box-shadow: unset;
+          }
+          &::placeholder {
+            font-style: italic;
+          }
+        }
+        select {
+          cursor: pointer;
+        }
+        .btn {
+          height: 50px;
+        }
+      }
+    }
+  }
+  &-featured {
+  }
+  &-blog {
+    // background-color: $secondary-color;
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 370px;
+      min-height: 370px;
+      box-shadow: 1px 4px 4px 2px rgba($color: #000000, $alpha: 0.15);
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+      &-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        .card-title {
+          font-size: $font-card-title;
+        }
+      }
+      &:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      /* Position the front and back side */
+      &-front,
+      &-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      &-front {
+        background-color: $white-color;
+        color: $dark-color;
+      }
+
+      /* Style the back side */
+      &-back {
+        background-color: $primary-color;
+        color: $white-color;
+        transform: rotateY(180deg);
+
+        .btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transition: 0.3s;
+          transform: translate(-50%, -50%);
+
+          &:hover {
+            background-color: $white-color;
+            color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+  &-subscribe {
+    background-image: $bg-subscribe;
+    background-position: center center;
+
+    .form-control {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $primary-color;
+      padding-left: 0;
+      height: 50px;
+    }
+  }
+  &-how-it-works {
+    .how-it-card {
+      position: relative;
+      border-radius: 0.5rem;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      &:hover {
+        box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.07);
+      }
+      .card-index {
+        position: absolute;
+        font-size: $font-large;
+        color: rgba($color: $dark-color, $alpha: 0.07);
+        top: 1.25rem;
+        right: 1.25rem;
+      }
+    }
+  }
+  &-testimonial {
+    background-color: $secondary-color;
+    .sec-text {
+      max-width: 580px;
+    }
+    .testimonial {
+      &-item {
+        padding: 2.5rem;
+      }
+      &-quote {
+        position: relative;
+        font-size: 0.9rem;
+
+        .tip,
+        .tip::after {
+          content: '';
+          position: absolute;
+          display: block;
+          left: 50%;
+          bottom: -10px;
+          width: 0;
+          height: 0;
+          border-bottom: 10px;
+          border-color: transparent;
+          border-width: 10px;
+          border-style: solid;
+          transform: translateX(-50%);
+          border-bottom-width: 0;
+          border-top-color: #bbb;
+        }
+        .tip::after {
+          bottom: 1px;
+          border-top-color: $secondary-color;
+        }
+      }
+      &-tooltip {
+        border: 1px solid #ddd;
+        position: relative;
+        min-height: 75px;
+      }
+      &-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    // owl carousel
+    .owl-theme .owl-dots .owl-dot span {
+      width: 13px;
+      height: 13px;
+      background: $primary-color-light;
+    }
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+      background: $primary-color;
+    }
+  }
+  &-partner {
+    .owl-carousel .owl-stage {
+      padding-top: 5px;
+    }
+    .partner-card {
+      padding: 30px;
+      img {
+        height: 100px;
+      }
+    }
+    .carousel-control {
+      button {
+        background-color: #f0f0f0;
+        margin-left: 5px;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border: none;
+        transition: 0.5s;
+        color: #9b6ec1;
+        &:hover {
+          background-color: #9b6ec1;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// style home page end

@@ -1,0 +1,31 @@
+.dashboard{
+    .card{
+        &-icon{
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            i{
+                width: 70px;
+                height: 60px;
+                color: $white-color;
+                text-align: center;
+                line-height: 60px;
+                border-radius: $primary-radius;
+            }
+        }
+        .type{
+            color: $light-dark;
+        }
+        &-value{
+            font-size: $font-xl;
+        }
+        &-footer{
+            border-bottom-right-radius: $primary-radius;
+            border-bottom-left-radius: $primary-radius;
+            font-size: $text-size;
+        }
+    }
+    .card-min-height{
+        min-height: 320px;
+    }
+}

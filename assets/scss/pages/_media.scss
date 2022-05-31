@@ -1,0 +1,177 @@
+//large device
+@media (min-width: 1200px){
+    
+}
+@media (max-width: 1200px){
+    .latest-propery{
+        .facility{
+            display: none !important;
+        }    
+    }
+}
+//large device
+@media (min-width: 992px) and (max-width: 1199.98px){
+    // home page 
+    #home{
+        &-c{
+            .flip-card {
+                height: 315px;
+                min-height: 315px;
+                margin-bottom: 2rem;
+                .card-title{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+// medium device
+@media(max-width: 991.98px){
+    .navbar-nav{
+        border-top: 1px solid $primary-color;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        .nav-item{
+            width: 100%;
+
+            .nav-link{
+                margin-left: 0;
+            }
+            .dropdown-menu{
+                border: none;
+            }
+        }
+        .btn{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+
+    // invoice page start
+    .invoice .transaction{
+        font-size: .9rem;
+    }
+    // invoice page end
+
+}
+// medium device
+@media (min-width: 768px) and (max-width: 991.98px){
+    #home{
+        &-c{
+            a.btn{
+                margin-bottom: 2rem;
+            }
+            .flip-card {
+                height: 360px;
+                min-height: 360px;
+            }
+        }
+    }
+}
+//tablet & smaller device
+@media(max-width: 767.98px){
+    // home page 
+    #home{
+        &-c{
+            a.btn{
+                margin-bottom: 2rem;
+            }
+            .flip-card {
+                height: 295px;
+                min-height: 295px;
+            }
+        }
+    }
+    // home page end
+    // invoice page start
+    .order-info{
+        text-align: left !important;
+        margin-top: 15px;
+    }
+    // invoice page end
+    // forgot pass page start
+    .forgot-pass{
+        text-align: center;
+    }
+    // forgot pass page end
+}
+
+//smaller device
+@media(max-width: 575.98px){
+    .sign-in-brand{
+        i{
+            font-size: 72px;
+        }
+        h2{
+            font-size: $res-title-size;
+        }
+    }
+    // home page 
+    #home{
+        &-c{
+            .flip-card {
+                height: 475px;
+                min-height: 475px;
+                margin-bottom: 2rem;
+            }
+        }
+        &-d{
+            .subscribe-form{
+                flex-direction: column;
+                text-align: center;
+                .form-control{
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+                .btn{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .footer{
+        &-bottom{
+            text-align: center;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+}
+// extra small device
+@media(max-width: 480px){
+    .sec-title{
+        font-size: 1.7rem;
+    }
+    // home page 
+    #home{
+        &-c{
+            .flip-card {
+                height: 405px;
+                min-height: 405px;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    // invoice page start
+    .invoice .transaction{
+        font-size: .85rem;
+    }
+    // invoice page end
+}
+
+// extra small device
+@media(max-width: 375px){
+    // home page 
+    #home{
+        &-c{
+            .flip-card {
+                height: 370px;
+                min-height: 370px;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

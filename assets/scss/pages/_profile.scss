@@ -1,0 +1,72 @@
+.profile{
+    &-left{
+        .user-img{
+            width: 70px;
+            height: 70px;
+            border: 1px solid #ddd;
+            background-color: $secondary-color;
+            border-radius: 50%;
+            position: relative;
+            
+            img{
+                width: 100%;
+                height: 70px;
+                border-radius: 50%;
+            }
+            .overlay{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                background-color: $primary-color;
+                border: none;
+                color: $white-color;
+                top: 60%;
+                right: -4px;
+                z-index: +1;
+                border-radius: 50%;
+                font-size: 10px;
+                text-align: center;
+                transition: .5s;
+                &:hover{
+                    background-color: $optional-color;
+                }
+            }
+        }
+        .settings{
+            .list-group-item.active{
+                background-color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+    &-right{
+        .card{
+            &-header-action{
+                button{
+                    color: $primary-color;
+                    font-weight: 600;
+                    transition: .5s;
+
+                    &:focus{
+                        border: none;
+                    }
+                    &:hover{
+                        background-color: $primary-color;
+                        color: $white-color;
+                    }
+                }
+                .btn-save{
+                    display: none;
+                }
+            }
+            &-header-title{
+                color: $primary-color;
+                font-weight: 600;
+            }
+            .form-group label{
+                font-weight: 600;
+            }
+        }
+    }
+}

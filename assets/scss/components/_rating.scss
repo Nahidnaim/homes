@@ -1,0 +1,9 @@
+.rating {
+  span {
+    .fa-star,
+    .fa-star-half-stroke,
+    .full-star {
+      color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.vsa-list {
+  --vsa-max-width: 100%;
+  --vsa-border-style: none;
+  --vsa-default-icon-size: 0.35;
+  border: none;
+}
+
+.vsa-item {
+  &--is-active {
+    .vsa-item__trigger__icon {
+      .open {
+        display: none;
+      }
+
+      .close {
+        display: block;
+      }
+    }
+  }
+  &__trigger__icon {
+    padding-left: 3rem !important;
+    .open {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    .close {
+      display: none;
+      font-size: 0.9rem;
+    }
+  }
+}

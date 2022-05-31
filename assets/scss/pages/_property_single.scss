@@ -1,0 +1,112 @@
+.property-single {
+  .property-single-banner {
+    .owl-theme .owl-prev,
+    .owl-theme .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: $primary-color !important;
+      color: $white-color !important;
+      cursor: pointer;
+
+      &:focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    .owl-prev {
+      left: 10px;
+    }
+    .owl-next {
+      right: 10px;
+    }
+  }
+  .card-focus {
+    &-item {
+      .icon {
+        color: #ddd;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid $border-color;
+      }
+    }
+  }
+
+  .amenities-card {
+    .list-group {
+      &-item {
+        border: none;
+        padding-left: 0;
+        color: $light-dark;
+        svg {
+          color: $primary-color;
+        }
+        span {
+          margin-top: -4px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .entity {
+    &-header {
+      font-weight: 600;
+      color: $optional-color;
+      margin-bottom: 10px;
+      i {
+        color: $primary-color;
+      }
+    }
+    &-details {
+      padding: 0.3rem 0;
+      color: $light-dark;
+    }
+  }
+  .table {
+    border: none;
+  }
+  .property-details-card {
+    .card-body {
+      border-top: 1px solid $border-color;
+    }
+    .details {
+      .table {
+        td {
+          padding-left: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .property-single {
+    .card-top {
+      text-align: center;
+      .tags {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .card-focus {
+      &-item {
+        border-bottom: 1px solid $border-color;
+        .icon {
+          color: #ddd;
+        }
+        &:not(:last-child) {
+          border-right: 1px solid $border-color;
+        }
+      }
+    }
+    .property-ratings {
+      text-align: left !important;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/*
+Template Name: Amana Homes - A Real Estate Company
+Author: NahidNaim
+Version: 1.0.0
+Website: https://www.amanahomesbd.com
+Contact: nahidnaim41@gmail.com
+File: Index CSS File
+*/
+
+// Fonts
+// Core Files
+@import 'variables';
+@import 'config';
+@import './utilities/buttons';
+// Structure
+// Components
+@import './components/card';
+@import './components/social';
+@import './components/navbar';
+@import './components/footer';
+@import './components/rating';
+@import './components/partner';
+@import './components/breadcrumb';
+@import './components/banner';
+// Pages
+@import './pages/home';
+@import './pages/about_us';
+@import './pages/contact_us';
+@import './pages/property_single';
+// Plugins
+// @import 'tiny-slider/src/tiny-slider';
+// icons

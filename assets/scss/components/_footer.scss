@@ -1,0 +1,40 @@
+// style footer start
+.footer {
+  background-color: $primary-color;
+  color: $white-color;
+
+  &-top {
+    border-bottom: 1px solid $white-color;
+    padding-bottom: 40px;
+  }
+  &-title {
+    font-weight: bold;
+  }
+
+  .nav {
+    &-link {
+      color: $white-color;
+      padding-left: 0;
+      svg {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+// scroll-btn css start
+.scroll-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 35px;
+  height: 35px;
+  background-color: #9b6ec1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  &:hover {
+    background: #be70ff;
+  }
+}
+// scroll-btn css end
+// style footer end

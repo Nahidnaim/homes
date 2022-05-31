@@ -1,0 +1,153 @@
+.forsale{
+    .property-header{
+        margin-bottom: 30px;
+    }
+    &-card{
+        box-shadow: 0 0 2px 1px rgba(0,0,0, .1);
+        padding: 1.5rem;
+        margin-bottom: 30px;
+        border-radius: $primary-radius;
+        &-title{
+            font-size: $font-card-title;
+            font-weight: 600;
+            color: $dark-color;
+            
+            a{
+                color: $dark-color;
+                &:hover{
+                    color: $optional-color;
+                }
+            }
+            
+        }
+        &-text{
+            font-size: $small-size;
+            color: $primary-color;
+        }
+    }
+    &-left-sidebar{
+        .input-group{
+            .form-control{
+                border-right: none;
+            }
+        }
+        .form-control{
+            height: 50px;    
+            border-radius: $primary-radius;
+        }
+        .input-group-text{
+            background-color: transparent;
+            border-left: none;   
+            border-top-right-radius: $primary-radius !important;
+            border-bottom-right-radius: $primary-radius !important;
+            color: $light-dark;
+        }
+
+        // ui slider style start
+        #distance-range,
+        #price-range,
+        #space-range{
+            border: none;
+            color: $primary-color;
+            font-weight: 600;
+            &:focus,
+            &:focus-within{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .ui-slider-horizontal{
+            height: .6rem;
+        }
+        .ui-widget.ui-widget-content {
+            border: none;
+        }
+        .ui-widget-content {
+            border: none;
+            background: #eaeaea;
+            color: #333;
+        }
+        .ui-widget-header {
+            border: none;
+            background: $primary-color;
+        }
+        .ui-slider-handle{
+            width: 1rem;
+            height: .8rem;
+            background-color: black;
+            top: -.09rem;
+            border: none;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            border-radius: .1rem;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+        // ui slider style end
+        .advanced-filter{
+            .custom-control{
+                margin-bottom: 1rem;
+            }
+            .custom-control-input:checked~.custom-control-label::before {
+                color: #fff;
+                border-color: $primary-color;
+                background-color: $primary-color;
+            }
+        }
+    }
+    // property list style start
+    .property-header{
+        // background-color: $grey-color;
+        box-shadow: 0 0 2px 1px rgba(0,0,0, .1);
+        padding: .7rem 1.5rem;
+        border-radius: $primary-radius;
+        
+        .btn-groups{
+            border: 1px solid #ddd;
+            padding: 2px;
+            border-radius: $primary-radius;
+        }
+    }
+    &-card-item{
+        padding: .5rem;
+        
+        .property-img{
+            position: relative;
+            img{
+                border-radius: $primary-radius;
+            }
+            .purpose{
+                position: absolute;
+                top: .5rem;
+                left: .5rem;
+
+                a{
+                    color: $white-color;
+                }
+            }
+        }   
+        .property-info-top{
+            margin-bottom: .8rem;
+        } 
+        .price{
+            color: $primary-color;
+            font-weight: bold;
+            font-size: $font-xl;
+            margin-bottom: 0;
+        }
+        .forsale-card-title{
+            margin-bottom: .7rem;
+        }
+        .contact-info{
+            font-size: $small-size;
+            color: $light-dark;
+
+            i{
+                color: $optional-color;
+            }
+        }
+    }
+    // property list style end
+}

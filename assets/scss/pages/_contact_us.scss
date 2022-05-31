@@ -1,0 +1,55 @@
+.contact-us {
+  &-wrap {
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
+    border-radius: $primary-radius;
+  }
+  &-info {
+    border-top-left-radius: $primary-radius;
+    border-bottom-left-radius: $primary-radius;
+  }
+  .nav {
+    &-link {
+      color: $white-color;
+      padding-left: 0;
+    }
+  }
+  .social {
+    justify-content: flex-start;
+    margin-top: 1rem;
+    &-item {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+  .all-address {
+    .card {
+      min-height: 200px;
+      .card-body {
+        //font-size: 14px;
+        .nav {
+          &-item {
+            color: #fff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: baseline;
+          }
+          &-link {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .contact-us {
+    &-wrap {
+      border-radius: $primary-radius;
+    }
+    &-info {
+      border-top-left-radius: $primary-radius;
+      border-bottom-left-radius: $primary-radius;
+      border-radius: $primary-radius;
+    }
+  }
+}

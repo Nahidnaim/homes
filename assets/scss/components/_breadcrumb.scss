@@ -1,0 +1,15 @@
+// style breadcrumb start
+.breadcrumb-wrap {
+  background-color: $secondary-color;
+}
+.breadcrumb {
+  background-color: transparent;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  &-item {
+    a {
+      color: $primary-color;
+    }
+  }
+}
+// style breadcrumb end

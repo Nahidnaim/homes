@@ -1,0 +1,74 @@
+// general card style start
+.card {
+  border: none;
+  box-shadow: 0px 0px 4px 2px rgba($color: #000000, $alpha: 0.1);
+  border-radius: $primary-radius;
+  transition: 0.3s;
+  margin-bottom: 30px;
+
+  &-header {
+    border-top-right-radius: $primary-radius !important;
+    border-top-left-radius: $primary-radius !important;
+  }
+
+  &-img {
+    position: relative;
+    .overlay-text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  &-img-top {
+    width: 100%;
+    border-top-left-radius: $primary-radius;
+    border-top-right-radius: $primary-radius;
+  }
+  &-type {
+    color: $primary-color;
+    font-size: $small-size;
+  }
+  &-title {
+    font-size: $font-card-title;
+    font-weight: 600;
+    a {
+      color: $dark-color;
+    }
+    &-large {
+      font-size: $card-title-large;
+    }
+  }
+  &-author {
+    &-name {
+      color: $optional-color;
+    }
+  }
+  &-text {
+    color: $dark-color;
+  }
+  .location,
+  .card-date,
+  .card-comment {
+    color: $light-dark;
+    font-size: $text-size;
+    font-style: italic;
+  }
+  .facility {
+    color: $light-dark;
+    font-size: $text-size;
+    i {
+      color: $primary-color;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 12px 8px rgba($color: #000000, $alpha: 0.12);
+
+    .card-title {
+      a {
+        color: $optional-color;
+      }
+    }
+  }
+}
+// general card style end
